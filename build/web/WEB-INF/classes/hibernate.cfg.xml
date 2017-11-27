@@ -43,8 +43,9 @@ Contributor(s):
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bd_firecast_community?zeroDateTimeBehavior=convertToNull</property>
-    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.url">jdbc:mysql://172.31.28.11:3306/bd_firecast_community?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">userFPL</property>
+    <property name="hibernate.connection.password">saCYElhXGpQ2WmLi</property>
     <mapping resource="pojo/Radio.hbm.xml"/>
     <mapping resource="pojo/Ocorrencia.hbm.xml"/>
     <mapping resource="pojo/Usuario.hbm.xml"/>
