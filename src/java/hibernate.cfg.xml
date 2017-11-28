@@ -43,9 +43,9 @@ Contributor(s):
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://10.131.24.1:3306/sampledb</property>
-    <property name="hibernate.connection.username">userE05</property>
-    <property name="hibernate.connection.password">dgISLf7aV8wpAjlm</property>
+    <property name="hibernate.connection.url">jdbc:mysql://10.131.46.1:3306/sampledb</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">OJthM1bWknF5vyGT</property>
     <mapping resource="pojo/Radio.hbm.xml"/>
     <mapping resource="pojo/Ocorrencia.hbm.xml"/>
     <mapping resource="pojo/Usuario.hbm.xml"/>
