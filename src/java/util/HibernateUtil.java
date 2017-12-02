@@ -5,6 +5,11 @@
  */
 package util;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.SessionFactory;
 
@@ -20,6 +25,49 @@ public class HibernateUtil {
     
     static {
         try {
+//            
+//            String databaseURL = "jdbc:mysql://johnny.heliohost.org:3306/krlwfdrs_db_firecast_community";
+//            String user = "krlwfdrs_user";
+//            String password = "teste";
+//        Connection conn = null;
+//        try {
+//            Class.forName("com.mysql.jdbc.Driver");
+//            conn = DriverManager.getConnection(databaseURL, user, password);
+//            if (conn != null) {
+//                System.out.println("Connected to the database");
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            System.out.println("Could not find database driver class");
+//            ex.printStackTrace();
+//        } catch (SQLException ex) {
+//            System.out.println("An error occurred. Maybe user/password is invalid");
+//            ex.printStackTrace();
+//        } finally {
+//            if (conn != null) {
+//                try {
+//                    conn.close();
+//                } catch (SQLException ex) {
+//                    ex.printStackTrace();
+//                }
+//            }
+//        }
+//            
+//            try {
+//
+//            Statement sqlStatement = conn.createStatement();
+//            String readRecordSQL = "select * from cidade;";  
+//            ResultSet myResultSet = sqlStatement.executeQuery(readRecordSQL);
+//            while (myResultSet.next()) {
+//                System.out.println("Record values: " + myResultSet.getString("WORK_ORDER_NO"));
+//            }
+//            myResultSet.close();
+//            conn.close();
+//
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }      
+            
+            
             // Create the SessionFactory from standard (hibernate.cfg.xml) 
             // config file.
             sessionFactory = new AnnotationConfiguration().configure().buildSessionFactory();
